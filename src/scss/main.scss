@@ -1,13 +1,164 @@
 @import "~normalize.css";
-
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/week-summary.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #92bbd1;
+  background-image: linear-gradient(163deg, #92bbd1 0%, #ffffff 100%);
   min-height: 100vh;
+}
+
+section {
+  background: #ffffff;
+}
+
+.secondary-heading {
+  color: #1460aa;
+}
+
+.special-heading {
+  color: #21a179;
+}
+
+a {
+  color: #02e4d5;
+}
+
+.header {
+  background-color: #fff;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.input:focus {
+  border: 2px solid yellow;
+}
+
+.navigation {
+  padding: 16px;
+  display: none;
+}
+
+.navigation--open {
+  display: block;
+}
+
+.navigation__link {
+  color: #92140c;
+  display: block;
+  margin: 0 0 16px;
+}
+
+.navigation__link:hover {
+  color: #1460aa;
+}
+
+.navigation__link:focus {
+  border: 3px solid yellow;
+}
+
+.navigation__link:visited {
+  color: #1460aa;
+}
+
+.navigation__link--homepage {
+  color: black;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 60px auto 0;
+  &__heading {
+    color: #92140c;
+  }
+}
+
+.about {
+  &__heading {
+    color: #1460aa;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 16px;
+      background-color: #92140c;
+    }
+  }
+  &__link {
+    color: #0c925a;
+  }
+  &__picture {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.notes__heading {
+  color: #1460aa;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.footer__link {
+  color: #1460aa;
+}
+
+.list {
+  list-style: square;
+}
+
+.table {
+  width: 100%;
+}
+
+.klasa-z-js {
+  background-color: yellow;
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border: none;
+  background-color: none;
+}
+
+.grid {
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+  }
+
+  .navigation {
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+  }
 }
