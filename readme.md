@@ -1,8 +1,14 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# My Homepage 
 
-Simple toolkit for your static websites development.
+Website on which I put into practice things I learn during the training [WTF-Co ten Frontend](https://cotenfrontend.pl/).
+
+## Technologies used
+
+- HTML5, CSS3, SCSS, Flex, Grid, RWD, BEM
+- JavaScript, ES6 
+- NPM, Webpack
 
 ## How to use it?
 
