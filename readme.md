@@ -1,4 +1,4 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](./homepage-webpack/gh/cover.png)
 
 # My Homepage 
 
