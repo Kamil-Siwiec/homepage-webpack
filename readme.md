@@ -1,4 +1,4 @@
-![cover](./homepage-webpack/gh/cover.png)
+![cover](gh/homepage.jpg)
 
 # My Homepage 
 
