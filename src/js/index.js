@@ -154,20 +154,20 @@ if (32 > 20) {
     console.log('nieprawda')
 }
 
-const result =(32 > 20) ? true : false;
+// const result =(32 > 20) ? true : false;
 
-console.log(result)
+// console.log(result)
 
 
 // DWA sposoby na klikniecie i dokonanie zmiany w html
 
-const button = document.querySelector('.action--js');
+// const button = document.querySelector('.action--js');
 
-button.addEventListener('click', () => {
-  const heading = document.querySelector('.main__heading--js');
-  heading.innerHTML = `Witaj Drogi Odwiedzający, nazywam się Kamil!`;
-  console.log();
-});
+// button.addEventListener('click', () => {
+//   const heading = document.querySelector('.main__heading--js');
+//   heading.innerHTML = `Witaj Drogi Odwiedzający, nazywam się Kamil!`;
+//   console.log();
+// });
 
 
 // drugi sposob osobno pobieranie , osobno funkcja osobno nasluchiwanie
@@ -194,4 +194,28 @@ const startOfDay = moment().startOf('day').fromNow();
 
 const timePlaceholder = document.querySelector('.time--js');
 
-timePlaceholder.innerHTML = startOfDay;
+timePlaceholder.innerHTML = startOfDay; 
+
+
+//Funkcja save do local storage
+
+const entry = localStorage.getItem('entry');
+let result = '';
+
+if (entry) {
+    console.log(`wartość entry: ${entry}`);
+    result = entry;
+}
+
+const entryInput = document.querySelector('.entry--js');
+entryInput.value = result;
+
+
+const button = document.querySelector('.action--js');
+
+console.log(button);
+
+
+button.addEventListener('click', () => {
+    localStorage.setItem('entry', entryInput.value);
+});
