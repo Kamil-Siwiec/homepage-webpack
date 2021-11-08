@@ -223,3 +223,19 @@ button.addEventListener('click', () => {
 
 // JS Fetch API
 
+fetch('https://api.github.com/users/kamil-siwiec/repos?sort=created&direction=asc')
+.then(resp => resp.json())
+.then(resp => {
+  for (let repo of resp) {
+    const {name, html_url} = repo;
+    const repositoryList = document.querySelector(`.list--js`);
+    const myTemplate = `<li>
+    ${name} <a href="${html_url}" title="link do repozytorium ${name} na githubie">link do githuba</a>
+    </li>`;
+    repositoryList.innerHTML += myTemplate;
+    console.log(`${name} ${html_url}`);
+  }
+})
+.catch(error => {
+  console.log(error);
+})
