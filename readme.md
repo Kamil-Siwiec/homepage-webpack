@@ -6,8 +6,9 @@ Website on which I put into practice things I learn during the training [WTF-Co 
 
 ## Technologies used
 
-- HTML5, CSS3, SCSS, Flex, Grid, RWD, BEM
-- JavaScript, ES6 
+- HTML5, CSS3, SCSS, RWD, BEM,
+- CSS Flexbox, CSS Grid,
+- JavaScript, ES6 ,
 - NPM, Webpack
 
 ## How to use it?
