@@ -219,3 +219,7 @@ console.log(button);
 button.addEventListener('click', () => {
     localStorage.setItem('entry', entryInput.value);
 });
+
+
+// JS Fetch API
+
