@@ -3,11 +3,11 @@
 # My Homepage 
 
 - Website on which I put into practice things I learn during the training [WTF-Co ten Frontend](https://cotenfrontend.pl/).
-- See the live view here [homepage-webpack](https://kamil-siwiec.github.io/homepage-webpack/)
+- See the live view here --> [homepage-webpack](https://kamil-siwiec.github.io/homepage-webpack/)
 
 ## Technologies used
 
-- HTML5, CSS3, SCSS, RWD, BEM,
+- HTML5, CSS3, SCSS, RWD, BEM Methodology,
 - CSS Flexbox, CSS Grid,
 - JavaScript, ES6 ,
 - NPM, Webpack
